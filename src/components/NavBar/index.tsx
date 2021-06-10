@@ -2,7 +2,7 @@ import React from 'react'
 
 export const NavBar = () => {
     return (
-        <div>
+        <div className="md:col-span-1">
             <nav>
                 <div>
                     <h1 className="font-medium uppercase p-4 border-b border-gray-100">

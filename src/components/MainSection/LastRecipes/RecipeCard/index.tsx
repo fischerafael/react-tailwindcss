@@ -1,8 +1,11 @@
 import React from 'react'
 
 export const RecipeCard = () => {
+    const cardContainer =
+        'bg-white rounded-xl overflow-hidden shadow-sm relative'
+
     return (
-        <div className="bg-white rounded-xl overflow-hidden shadow-sm max-w-sm relative">
+        <div className={cardContainer}>
             <img
                 src="https://s2.glbimg.com/PiQjmv_CNRurQMf8stNnxem3tyw=/0x0:600x387/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/P/D/hgO8L8SAKl5Ty9IQs9nA/bolinho-de-arroz-crocante.jpg"
                 alt="airfryer"
