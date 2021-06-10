@@ -5,8 +5,13 @@ export const NavBar = () => {
         <div>
             <nav>
                 <div>
-                    <h1 className="font-bold uppercase p-1 border-b border-gray-100">
-                        <a href="/">AirFood</a>
+                    <h1 className="font-medium uppercase p-4 border-b border-gray-100">
+                        <a
+                            href="/"
+                            className="text-sm sm:text-xl text-green-500"
+                        >
+                            AirFood
+                        </a>
                     </h1>
                 </div>
                 <ul>
