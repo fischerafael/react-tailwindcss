@@ -1,12 +1,12 @@
 import React from 'react'
-import { ActionsSection } from '../ActionsSection'
-import { HeaderSection } from '../HeaderSection'
-import { LastRecipesSection } from '../LastRecipes'
-import { MoreRecipesSection } from '../MoreRecipes'
+import { ActionsSection } from './ActionsSection'
+import { HeaderSection } from './HeaderSection'
+import { LastRecipesSection } from './LastRecipes'
+import { MoreRecipesSection } from './MoreRecipes'
 
 export const MainSection = () => {
     return (
-        <main className="px-16 py-6">
+        <main className="px-16 py-6 bg-gray-50">
             <ActionsSection />
             <HeaderSection />
             <LastRecipesSection />
