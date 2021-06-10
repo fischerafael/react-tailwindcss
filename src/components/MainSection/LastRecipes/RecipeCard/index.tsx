@@ -3,7 +3,7 @@ import ClockIcon from '../../../Icons/Clock'
 
 export const RecipeCard = () => {
     const cardContainer =
-        'bg-white rounded-xl overflow-hidden shadow-sm relative'
+        'bg-white rounded-xl overflow-hidden shadow-sm relative cursor-pointer duration-500 hover:shadow-xl'
 
     return (
         <div className={cardContainer}>
