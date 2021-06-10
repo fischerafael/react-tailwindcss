@@ -9,10 +9,10 @@ export const NavBar = () => {
     const [isNavOpen, setNavOpen] = React.useState(false)
 
     return (
-        <div className="md:col-span-1 md:shadow-xl z-10">
+        <div className="md:col-span-1 shadow-sm z-10 fixed md:relative bg-white w-full">
             <nav>
                 <div className="flex justify-between md:justify-end items-center gap-5 md:mb-10 py-4 px-5">
-                    <h1 className="font-bold tracking-widest uppercase text-sm md:text-xl text-green-400 bg-white">
+                    <h1 className="font-bold tracking-widest uppercase text-sm md:text-xl text-green-800 bg-white">
                         AirFood
                     </h1>
                     <MenuIcon
@@ -23,10 +23,10 @@ export const NavBar = () => {
                 <ul
                     className={`${
                         !isNavOpen && 'hidden'
-                    } md:flex flex-col items-end gap-2 py-2 `}
+                    } md:flex flex-col items-end gap-2 py-2 transition duration-500`}
                 >
                     <NavLink isActive>
-                        <span>Sobre</span>
+                        <span>Início</span>
                         <HomeIcon />
                     </NavLink>
 
