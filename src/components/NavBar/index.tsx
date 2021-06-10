@@ -1,37 +1,32 @@
 import React from 'react'
 import { AboutIcon } from '../Icons/About'
-import HomeIcon from '../Icons/Home'
+import { HomeIcon } from '../Icons/Home'
 import { MessageIcon } from '../Icons/MessageIcon'
 import NavLink from './NavLink'
 
 export const NavBar = () => {
     return (
-        <div className="md:col-span-1 ">
+        <div className="md:col-span-1 shadow-xl z-10">
             <nav>
-                <div>
-                    <h1 className="font-medium uppercase p-4 border-b border-gray-100">
-                        <a
-                            href="/"
-                            className="text-sm sm:text-xl text-green-500"
-                        >
-                            AirFood
-                        </a>
+                <div className="flex justify-end mb-10">
+                    <h1 className="font-bold tracking-widest uppercase py-4 px-5 text-sm sm:text-xl text-green-400 bg-white">
+                        AirFood
                     </h1>
                 </div>
-                <ul className="flex flex-col gap-2 py-2">
+                <ul className="flex flex-col items-end gap-2 py-2">
                     <NavLink isActive>
+                        <span>Sobre</span>
                         <HomeIcon />
-                        <span>Sobre</span>
                     </NavLink>
 
                     <NavLink>
+                        <span>Sobre</span>
                         <AboutIcon />
-                        <span>Sobre</span>
                     </NavLink>
 
                     <NavLink>
-                        <MessageIcon />
                         <span>Contato</span>
+                        <MessageIcon />
                     </NavLink>
                 </ul>
             </nav>

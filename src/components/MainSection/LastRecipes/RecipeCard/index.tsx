@@ -1,5 +1,5 @@
 import React from 'react'
-import ClockIcon from '../../../Icons/Clock'
+import { ClockIcon } from '../../../Icons/Clock'
 
 export const RecipeCard = () => {
     const cardContainer =

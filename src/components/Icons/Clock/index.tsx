@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ClockIcon = () => {
+export const ClockIcon = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,5 +18,3 @@ const ClockIcon = () => {
         </svg>
     )
 }
-
-export default ClockIcon
