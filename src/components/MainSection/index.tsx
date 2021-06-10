@@ -4,8 +4,12 @@ export const MainSection = () => {
     return (
         <main className="px-16 py-6">
             <div>
-                <a href="#">Entrar</a>
-                <a href="#">Cadastrar</a>
+                <a href="#" className="text-red-600">
+                    Entrar
+                </a>
+                <a href="#" className="text-red-600">
+                    Cadastrar
+                </a>
             </div>
 
             <header>
@@ -41,7 +45,9 @@ export const MainSection = () => {
             </div>
 
             <div>
-                <div>Carregar mais...</div>
+                <div className="bg-yellow-100 text-gray-900 p-1">
+                    Carregar mais...
+                </div>
             </div>
         </main>
     )

@@ -6,7 +6,7 @@ export const NavBar = () => {
             <nav>
                 <div>
                     <h1 className="font-bold uppercase p-1 border-b border-gray-100">
-                        <a href="/">RecFryer</a>
+                        <a href="/">AirFood</a>
                     </h1>
                 </div>
                 <ul>
