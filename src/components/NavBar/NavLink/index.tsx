@@ -5,7 +5,7 @@ interface Props {
     isActive?: boolean
 }
 
-const NavLink = ({ children, isActive }: Props) => {
+export const NavLink = ({ children, isActive }: Props) => {
     return (
         <li
             className={`${
@@ -18,5 +18,3 @@ const NavLink = ({ children, isActive }: Props) => {
         </li>
     )
 }
-
-export default NavLink
