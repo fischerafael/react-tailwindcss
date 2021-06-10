@@ -1,4 +1,5 @@
 import React from 'react'
+import ClockIcon from '../../../Icons/Clock'
 
 export const RecipeCard = () => {
     const cardContainer =
@@ -17,8 +18,9 @@ export const RecipeCard = () => {
                     Receita por @fischerafael
                 </span>
             </div>
-            <div className="bg-gray-100 text-gray-500 text-sm uppercase font-bold rounded-full px-3 py-1 absolute top-0 m-2">
-                <span>25 min</span>
+            <div className="bg-gray-100 rounded-full pl-1 pr-3 py-1 absolute top-0 m-2 flex gap-2 justify-center items-center">
+                <ClockIcon />
+                <span className="text-gray-500 text-xs uppercase">25 min</span>
             </div>
         </div>
     )

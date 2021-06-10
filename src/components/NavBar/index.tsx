@@ -1,8 +1,12 @@
 import React from 'react'
+import { AboutIcon } from '../Icons/About'
+import HomeIcon from '../Icons/Home'
+import { MessageIcon } from '../Icons/MessageIcon'
+import NavLink from './NavLink'
 
 export const NavBar = () => {
     return (
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 ">
             <nav>
                 <div>
                     <h1 className="font-medium uppercase p-4 border-b border-gray-100">
@@ -14,22 +18,21 @@ export const NavBar = () => {
                         </a>
                     </h1>
                 </div>
-                <ul>
-                    <li className="text-gray-800 font-bold">
-                        <a href="#">
-                            <span>Início</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>Sobre</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>Contato</span>
-                        </a>
-                    </li>
+                <ul className="flex flex-col gap-2 py-2">
+                    <NavLink isActive>
+                        <HomeIcon />
+                        <span>Sobre</span>
+                    </NavLink>
+
+                    <NavLink>
+                        <AboutIcon />
+                        <span>Sobre</span>
+                    </NavLink>
+
+                    <NavLink>
+                        <MessageIcon />
+                        <span>Contato</span>
+                    </NavLink>
                 </ul>
             </nav>
         </div>

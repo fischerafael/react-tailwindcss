@@ -1,11 +1,10 @@
 import React from 'react'
+import { Button } from '../../Button'
 
 export const MoreRecipesSection = () => {
     return (
         <div className="flex justify-center">
-            <div className="bg-yellow-100 text-gray-900 p-1">
-                Carregar mais...
-            </div>
+            <Button variant="secondary">Carregar mais...</Button>
         </div>
     )
 }
